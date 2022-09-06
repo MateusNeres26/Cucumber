@@ -1,0 +1,26 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class ResultadoBuscaPage {
+
+	WebDriver driver;
+
+	final String PRODUTO_BUSCA = "https://www.amazon.com.br/s?k=Iphone+13&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss";
+	final String PRECO_PRODUTO = "/html[1]/body[1]/div[4]/div[2]/div[3]/div[11]/div[14]/div[1]/div[1]/span[2]/span[2]/span[2];";
+
+	public ResultadoBuscaPage(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	public void clicarProduto() {
+		driver.findElement(By.xpath(PRODUTO_BUSCA)).click();
+	}
+
+	public String retornarValorProduto() {
+
+		return driver.findElement(By.xpath(PRECO_PRODUTO)).getText();
+	}
+
+}

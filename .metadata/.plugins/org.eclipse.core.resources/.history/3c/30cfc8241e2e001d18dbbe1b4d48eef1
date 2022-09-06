@@ -1,0 +1,7 @@
+
+Feature: Testes exemplo Cucumber
+Scenario: Teste cucumber Amazon
+
+Given que esteja na pagina: "https://www.amazon.com.br"
+When fizer a busca pelo produto: "Iphone 13"
+Then vou verificar se o valor está acima de "R$ 5.560,00"

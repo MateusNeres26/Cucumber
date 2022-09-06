@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="exemploCucumber" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="steps.Runner" time="7.421">
+    <testsuite name="Testes exemplo Cucumber" time="7.421">
+      <testcase name="Teste cucumber Amazon" classname="Testes exemplo Cucumber" time="7.421">
+        <failure>
+          <expected>R$ 5.559,00</expected>
+          <actual>5.559</actual>
+          org.junit.ComparisonFailure: expected:&lt;[R$ 5.559,00]&gt; but was:&lt;[5.559]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at steps.StepsAmazon.vou_verificar_se_o_valor_esta_acima_de(StepsAmazon.java:55)&#13;
+	at ✽.vou verificar se o valor está acima de "R$ 5.559,00"(file:///C:/Users/mneres/Cucumber/exemploCucumber/src/test/resources/feature/exemploCucumber.feature:7)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

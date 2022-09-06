@@ -1,0 +1,8 @@
+package pages;
+
+public class HomePage {
+
+	final String CAMPO_BUSCA = "//input[@id='twotabsearchtextbox']";
+	
+	
+}
